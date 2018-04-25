@@ -25,7 +25,6 @@ class AddViewController: UIViewController {
                 print(data.value(forKey: "name") as! String)
             }
         } catch {
-            
             print("Failed")
         }
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A4CB22E20889F9100DACA63 /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CB22D20889F9100DACA63 /* WordListViewController.swift */; };
 		4A55F91B20623E04008FDAC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55F91A20623E04008FDAC2 /* AppDelegate.swift */; };
 		4A55F92020623E04008FDAC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A55F91E20623E04008FDAC2 /* Main.storyboard */; };
 		4A55F92220623E04008FDAC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A55F92120623E04008FDAC2 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A4CB22D20889F9100DACA63 /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
 		4A55F91720623E04008FDAC2 /* 单词app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "单词app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A55F91A20623E04008FDAC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A55F91F20623E04008FDAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		4A606CE1206D07D900194724 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4A4CB22D20889F9100DACA63 /* WordListViewController.swift */,
 				4A7152F92072118200436CFC /* HistoryViewController.swift */,
 				4A7152FD207216A800436CFC /* AddViewController.swift */,
 				4A7152FB2072119600436CFC /* LearnViewController.swift */,
@@ -282,6 +285,7 @@
 				4A7152F8207210CD00436CFC /* MainViewController.swift in Sources */,
 				4A7152FE207216A800436CFC /* AddViewController.swift in Sources */,
 				4A55F91B20623E04008FDAC2 /* AppDelegate.swift in Sources */,
+				4A4CB22E20889F9100DACA63 /* WordListViewController.swift in Sources */,
 				4A7152FC2072119600436CFC /* LearnViewController.swift in Sources */,
 				4A7152FA2072118200436CFC /* HistoryViewController.swift in Sources */,
 				4A5C0538206A77900016092D /* Model.xcdatamodeld in Sources */,
