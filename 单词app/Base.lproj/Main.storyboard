@@ -260,10 +260,10 @@
             </objects>
             <point key="canvasLocation" x="1991" y="-371"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="4JZ-b5-K5a">
             <objects>
-                <viewController id="z3b-DS-xx0" sceneMemberID="viewController">
+                <viewController id="z3b-DS-xx0" customClass="SignInViewController" customModule="单词app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F3b-ys-pyX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -345,10 +345,10 @@
             </objects>
             <point key="canvasLocation" x="-127" y="-252"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="amD-ha-L2g">
             <objects>
-                <viewController id="Kay-zI-hHO" sceneMemberID="viewController">
+                <viewController id="Kay-zI-hHO" customClass="SignUpViewController" customModule="单词app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vGt-my-V7V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
