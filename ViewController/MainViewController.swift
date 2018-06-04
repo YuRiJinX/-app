@@ -10,26 +10,49 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var today: UILabel!
+    @IBOutlet weak var haveDone: UILabel!
+    @IBOutlet weak var remain: UILabel!
+    
+    var plan = Plan()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        plan.createPlan()
+        today.text = String(plan.today.count)
+        haveDone.text = String(plan.haveDone)
+        remain.text = String(plan.remain)
+        
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "learn" {
+            if plan.today.count > 0 {
+                return true
+            } else {
+                print(plan.remain)
+                return false
+            }
+        }
+        return true
     }
-    */
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            switch identifier {
+            case "learn":
+                if let lvc = segue.destination as? LearnViewController {
+                    lvc.plan = plan
+                }
+            default:
+                break
+            }
+        }
+    }
 }

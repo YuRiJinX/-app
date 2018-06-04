@@ -7,12 +7,61 @@
 //
 
 import UIKit
+import LeanCloud
 
 class SignUpViewController: UIViewController {
 
+    @IBAction func close(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBOutlet weak var userId: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var passwordRepeat: UITextField!
+    @IBAction func SignUp(_ sender: UIButton) {
+        if (userId.text != "") && (password.text != "") && (passwordRepeat.text != ""){
+            if (passwordRepeat.text! == password.text!) {
+                let newUser = LCUser()
+                
+                newUser.username = LCString(userId.text!);
+                newUser.password = LCString(password.text!);
+                
+                newUser.signUp()
+                
+                let defaultAction = UIAlertAction(title: "好的", style: .default) { _ in
+                    self.dismiss(animated: true, completion: nil)
+                }
+                let alert = UIAlertController(title: "注册成功！",
+                                              message: nil,
+                                              preferredStyle: .alert)
+                alert.addAction(defaultAction)
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                let defaultAction = UIAlertAction(title: "好的", style: .default) { _ in
+                    self.password.text = nil;
+                    self.passwordRepeat.text = nil;
+                }
+                let alert = UIAlertController(title: "两次输入的密码不同",
+                    message: "请确保您两次输入的密码是相同的!",
+                    preferredStyle: .alert)
+                alert.addAction(defaultAction)
+                self.present(alert, animated: true, completion: nil)
+            }
+        } else {
+            let defaultAction = UIAlertAction(title: "好的", style: .default) { _ in
+            }
+            let alert = UIAlertController(title: "请填写所有信息！",
+                                          message: "请输入所有信息",
+                                          preferredStyle: .alert)
+            alert.addAction(defaultAction)
+            self.present(alert, animated: true, completion: nil)
+
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        password.isSecureTextEntry = true;
+        passwordRepeat.isSecureTextEntry = true;
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,15 +70,5 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
