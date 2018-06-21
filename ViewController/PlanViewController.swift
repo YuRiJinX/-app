@@ -42,8 +42,8 @@ class PlanViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         let defaults = UserDefaults.standard
         defaults.set(selectionOfWords[numberOfWords.selectedRow(inComponent: 0)], forKey: "numberOfWords")
         defaults.set(selectionOfDays[numberOfWords.selectedRow(inComponent: 1)], forKey: "numberOFDays")
-        let defaultAction = UIAlertAction(title: "好的", style: .default) { _ in
-        }
+        (tabBarController as? tabBarViewController)?.plan.createPlan()
+        let defaultAction = UIAlertAction(title: "好的", style: .default)
         let alert = UIAlertController(title: "保存完毕",
                                       message: nil,
                                       preferredStyle: .alert)
@@ -55,15 +55,7 @@ class PlanViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
     }
-    */
-
 }

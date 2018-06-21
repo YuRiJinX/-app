@@ -13,21 +13,6 @@ class AddViewController: UIViewController {
     
     let context = AppDelegate.viewContext
     
-    
-    @IBAction func display(_ sender: UIButton) {
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Word")
-        //request.predicate = NSPredicate(format: "age = %@", "12")
-        request.returnsObjectsAsFaults = false
-        do {
-            let result = try context.fetch(request)
-            for data in result as! [NSManagedObject] {
-                print(data.value(forKey: "name") as! String)
-            }
-        } catch {
-            print("Failed")
-        }
-    }
-    
     @IBOutlet weak var spell: UITextField!
     @IBOutlet weak var phonetic: UITextField!
     @IBOutlet weak var explanation: UITextField!

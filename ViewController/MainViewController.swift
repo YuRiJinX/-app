@@ -14,35 +14,42 @@ class MainViewController: UIViewController {
     @IBOutlet weak var haveDone: UILabel!
     @IBOutlet weak var remain: UILabel!
     
-    var plan = Plan()
+    var plan: Plan?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        plan.createPlan()
-        today.text = String(plan.today.count)
-        haveDone.text = String(plan.haveDone)
-        remain.text = String(plan.remain)
-        
-        // Do any additional setup after loading the view.
+        plan = (self.tabBarController as? tabBarViewController)?.plan
+        updataLabelText()
     }
     
-
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    func updataLabelText() {
+        if let havePlan = plan {
+            today.text = String(havePlan.today.count)
+            haveDone.text = String(havePlan.haveDone)
+            remain.text = String(havePlan.remain)
+        } else {
+            today.text = String(0)
+            haveDone.text = String(0)
+            remain.text = String(0)
+        }
+    }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "learn" {
-            if plan.today.count > 0 {
-                return true
+            if let havePlan = plan {
+                if havePlan.today.count > 0 {
+                    return true
+                } else {
+                    print(havePlan.remain)
+                    return false
+                }
             } else {
-                print(plan.remain)
                 return false
             }
         }
         return true
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
             switch identifier {

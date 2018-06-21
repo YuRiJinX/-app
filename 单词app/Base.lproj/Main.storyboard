@@ -162,11 +162,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFo-c9-bWl">
+                                <rect key="frame" x="0.0" y="383" width="375" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="235" id="tpw-p9-ONn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="下一个"/>
+                                <connections>
+                                    <action selector="next:" destination="zh9-IY-5LP" eventType="touchUpInside" id="aoi-f5-uu0"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iy2-cu-AOU">
                                 <rect key="frame" x="0.0" y="172" width="375" height="446"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9G-sU-mM2">
-                                        <rect key="frame" x="163" y="50" width="49" height="41"/>
+                                        <rect key="frame" x="163" y="84" width="49" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="认识">
                                             <color key="titleColor" red="0.18108403497409331" green="0.18108403497409331" blue="0.18108403497409331" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -176,7 +187,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjd-5J-LJh">
-                                        <rect key="frame" x="138" y="143" width="98" height="41"/>
+                                        <rect key="frame" x="138" y="177" width="98" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="有点模糊">
                                             <color key="titleColor" red="0.18108403497409331" green="0.18108403497409331" blue="0.18108403497409331" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -185,23 +196,11 @@
                                             <action selector="confuse:" destination="zh9-IY-5LP" eventType="touchUpInside" id="lfJ-Eh-VCS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKW-iM-a5R">
-                                        <rect key="frame" x="151" y="236" width="73" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <state key="normal" title="不认识">
-                                            <color key="titleColor" red="0.18108403497409331" green="0.18108403497409331" blue="0.18108403497409331" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="dontKnow:" destination="zh9-IY-5LP" eventType="touchUpInside" id="LZN-7T-kND"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="rKW-iM-a5R" firstAttribute="centerX" secondItem="iy2-cu-AOU" secondAttribute="centerX" id="NDt-m9-cVk"/>
-                                    <constraint firstItem="w9G-sU-mM2" firstAttribute="top" secondItem="iy2-cu-AOU" secondAttribute="top" constant="50" id="Odg-d4-Vbe"/>
+                                    <constraint firstItem="w9G-sU-mM2" firstAttribute="top" secondItem="iy2-cu-AOU" secondAttribute="top" constant="84" id="Odg-d4-Vbe"/>
                                     <constraint firstItem="Hjd-5J-LJh" firstAttribute="top" secondItem="w9G-sU-mM2" secondAttribute="bottom" constant="52" id="a0P-Wz-LVI"/>
-                                    <constraint firstItem="rKW-iM-a5R" firstAttribute="top" secondItem="Hjd-5J-LJh" secondAttribute="bottom" constant="52" id="hE6-K4-k95"/>
                                     <constraint firstItem="Hjd-5J-LJh" firstAttribute="centerX" secondItem="iy2-cu-AOU" secondAttribute="centerX" id="tyx-lf-LTX"/>
                                     <constraint firstItem="w9G-sU-mM2" firstAttribute="centerX" secondItem="iy2-cu-AOU" secondAttribute="centerX" id="wh4-zz-v2P"/>
                                 </constraints>
@@ -209,13 +208,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="KFo-c9-bWl" firstAttribute="leading" secondItem="CKU-rF-JyV" secondAttribute="leading" id="COc-YO-cWW"/>
                             <constraint firstItem="iy2-cu-AOU" firstAttribute="bottom" secondItem="CKU-rF-JyV" secondAttribute="bottom" id="CZC-Dj-Eq4"/>
+                            <constraint firstItem="CKU-rF-JyV" firstAttribute="bottom" secondItem="KFo-c9-bWl" secondAttribute="bottom" id="Fge-64-3gv"/>
+                            <constraint firstItem="CKU-rF-JyV" firstAttribute="trailing" secondItem="KFo-c9-bWl" secondAttribute="trailing" id="NBn-zA-YM5"/>
                             <constraint firstItem="iy2-cu-AOU" firstAttribute="top" secondItem="Vsr-M5-RAo" secondAttribute="bottom" constant="16" id="QAt-2B-j8g"/>
                             <constraint firstItem="Vsr-M5-RAo" firstAttribute="top" secondItem="QUd-nF-yrt" secondAttribute="bottom" constant="10" id="RSi-GK-SH9"/>
                             <constraint firstItem="Vsr-M5-RAo" firstAttribute="leading" secondItem="CKU-rF-JyV" secondAttribute="leading" constant="54" id="U0V-uc-uew"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QUd-nF-yrt" secondAttribute="trailing" constant="20" symbolic="YES" id="YMF-FN-F3M"/>
                             <constraint firstItem="QUd-nF-yrt" firstAttribute="top" secondItem="CKU-rF-JyV" secondAttribute="top" constant="25" id="g0g-tF-7U6"/>
                             <constraint firstItem="iy2-cu-AOU" firstAttribute="leading" secondItem="CKU-rF-JyV" secondAttribute="leading" id="hHi-KQ-Cot"/>
                             <constraint firstItem="QUd-nF-yrt" firstAttribute="leading" secondItem="CKU-rF-JyV" secondAttribute="leading" constant="40" id="oy7-4A-hKI"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vsr-M5-RAo" secondAttribute="trailing" constant="20" symbolic="YES" id="scW-So-vqR"/>
                             <constraint firstItem="iy2-cu-AOU" firstAttribute="trailing" secondItem="CKU-rF-JyV" secondAttribute="trailing" id="vAc-5Z-IIW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CKU-rF-JyV"/>
@@ -224,6 +228,7 @@
                         <outlet property="explanation" destination="4aA-gc-LrF" id="wOf-bE-eqj"/>
                         <outlet property="learningView" destination="iy2-cu-AOU" id="DAM-gZ-FP9"/>
                         <outlet property="name" destination="QUd-nF-yrt" id="z1z-ja-Xiy"/>
+                        <outlet property="nextButton" destination="KFo-c9-bWl" id="HwU-B9-KcO"/>
                         <outlet property="phonetic" destination="Vsr-M5-RAo" id="XN4-UX-Opm"/>
                     </connections>
                 </viewController>
@@ -473,7 +478,7 @@
             </objects>
             <point key="canvasLocation" x="2885.5999999999999" y="400.74962518740631"/>
         </scene>
-        <!--Plan View Controller-->
+        <!--计划-->
         <scene sceneID="pEC-pe-w31">
             <objects>
                 <viewController id="S0y-px-JF7" customClass="PlanViewController" customModule="单词app" customModuleProvider="target" sceneMemberID="viewController">
@@ -530,8 +535,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ID7-uq-6nO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" selectedImage="STATISTICS" id="JMN-oC-BRc">
-                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="4"/>
+                    <tabBarItem key="tabBarItem" title="计划" id="JMN-oC-BRc">
+                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="numberOfWords" destination="ZNA-eu-xeY" id="Z4S-1d-Igl"/>
@@ -762,11 +767,11 @@
             </objects>
             <point key="canvasLocation" x="1017" y="-192"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--我的词库-->
         <scene sceneID="zAS-ab-zpa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6jk-uH-asz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="bIX-h9-DZQ"/>
+                    <tabBarItem key="tabBarItem" title="我的词库" id="bIX-h9-DZQ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DTg-R1-0aB">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -785,11 +790,13 @@
             </objects>
             <point key="canvasLocation" x="780" y="1003.4482758620691"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--主页-->
         <scene sceneID="eEc-tV-GsA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dej-ak-Py9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="topRated" id="gyo-by-epy"/>
+                    <tabBarItem key="tabBarItem" title="主页" id="gyo-by-epy">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EVj-6S-loZ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -809,7 +816,4 @@
             <point key="canvasLocation" x="1949.5999999999999" y="-1018.7406296851575"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="STATISTICS" width="66" height="66"/>
-    </resources>
 </document>

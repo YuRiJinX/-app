@@ -11,6 +11,7 @@ import CoreData
 
 class Plan {
     let context = AppDelegate.viewContext
+    let defaults = UserDefaults.standard
     
     var today: [Word]
     var haveDone: Int
@@ -18,17 +19,16 @@ class Plan {
     
     var Words: [Word]
     
+    
     var remain: Int {
         return Words.count - haveDone
     }
     
     init() {
-        let defaults = UserDefaults.standard
         wordsNumberOfEveryList = defaults.integer(forKey: "numberOfWords")
         haveDone = defaults.integer(forKey: "haveDone")
         
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Word")
-        //request.predicate = NSPredicate(format: "age = %@", "12")
         request.returnsObjectsAsFaults = false
         do {
             let result = try context.fetch(request)
@@ -42,9 +42,9 @@ class Plan {
     
     func createPlan() {
         if remain > wordsNumberOfEveryList {
-            today = Array(Words[haveDone...haveDone + wordsNumberOfEveryList])
+            today = Array(Words[haveDone...haveDone + wordsNumberOfEveryList - 1])
         } else if remain > 0 {
-            today = Array(Words[haveDone...Words.count])
+            today = Array(Words[haveDone...Words.count - 1])
         } else {
             today = []
         }

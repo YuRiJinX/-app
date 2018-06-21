@@ -77,8 +77,6 @@ class MyTVC: UITableViewCell {
             sender.isEnabled = false
             print("词库已下载")
         }
-        
-        
     }
     
     

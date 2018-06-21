@@ -13,9 +13,17 @@ class tabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
     let wordListQuery = LCQuery(className: "Wordlist")
     var rawValues: [LCObject] = []
+    var plan = Plan()
 
     override func viewDidLoad() {
+        
+        let vc = self.viewControllers!
+        vc[0].tabBarItem.image = UIImage(named: "home")
+        vc[1].tabBarItem.image = UIImage(named: "STATISTICS")
+        vc[2].tabBarItem.image = UIImage(named: "book")
+        vc[3].tabBarItem.image = UIImage(named: "people")
         delegate = self
+        plan.createPlan()
         wordListQuery.whereKey("WordListName", .existed)
         wordListQuery.find { result in
             switch result {
@@ -30,8 +38,6 @@ class tabBarViewController: UITabBarController, UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         if let wlvc = viewController as? WordListController {
             wlvc.wordlist = rawValues
-        } else if let mvc = viewController as? MainViewController {
-            //
         }
     }
 }

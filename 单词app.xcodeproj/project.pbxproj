@@ -17,6 +17,7 @@
 		4A55F93B20623E04008FDAC2 /* __appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55F93A20623E04008FDAC2 /* __appUITests.swift */; };
 		4A66ACBB20C48044005E8B81 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A66ACBA20C48044005E8B81 /* NotificationCenter.framework */; };
 		4A66ACCB20C53BEA005E8B81 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A66ACCA20C53BEA005E8B81 /* PlanViewController.swift */; };
+		4A66ACCD20C5C2CF005E8B81 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A66ACCC20C5C2CF005E8B81 /* Media.xcassets */; };
 		4A7152F8207210CD00436CFC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7152F7207210CD00436CFC /* MainViewController.swift */; };
 		4A7152FC2072119600436CFC /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7152FB2072119600436CFC /* LearnViewController.swift */; };
 		4A7152FE207216A800436CFC /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7152FD207216A800436CFC /* AddViewController.swift */; };
@@ -24,7 +25,6 @@
 		4AA266AC2098AC2300EA63A9 /* LeanCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA266AB2098AC2300EA63A9 /* LeanCloud.framework */; };
 		4AA7753020C1C5240087291C /* ShowMyWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7752F20C1C5240087291C /* ShowMyWords.swift */; };
 		4AA7753820C315DB0087291C /* WordTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7753720C315DB0087291C /* WordTVC.swift */; };
-		4AA7753A20C40ADA0087291C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA7753920C40ADA0087291C /* Media.xcassets */; };
 		4AA77C1820BD4CC500BE3291 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA77C1720BD4CC500BE3291 /* Plan.swift */; };
 		4AA77C1D20BD50BD00BE3291 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA77C1C20BD50BD00BE3291 /* List.swift */; };
 		4AA77C2020BD514100BE3291 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AA77C1E20BD514100BE3291 /* Model.xcdatamodeld */; };
@@ -68,6 +68,7 @@
 		4A66ACB920C48044005E8B81 /* learningWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = learningWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A66ACBA20C48044005E8B81 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		4A66ACCA20C53BEA005E8B81 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlanViewController.swift; path = "/Users/jinnaide/Desktop/Programing/单词app/ViewController/PlanViewController.swift"; sourceTree = "<absolute>"; };
+		4A66ACCC20C5C2CF005E8B81 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4A7152F7207210CD00436CFC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4A7152FB2072119600436CFC /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		4A7152FD207216A800436CFC /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +76,6 @@
 		4AA266AB2098AC2300EA63A9 /* LeanCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LeanCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA7752F20C1C5240087291C /* ShowMyWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMyWords.swift; sourceTree = "<group>"; };
 		4AA7753720C315DB0087291C /* WordTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTVC.swift; sourceTree = "<group>"; };
-		4AA7753920C40ADA0087291C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4AA77C1720BD4CC500BE3291 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 		4AA77C1C20BD50BD00BE3291 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		4AA77C1F20BD514100BE3291 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		4A55F91920623E04008FDAC2 /* 单词app */ = {
 			isa = PBXGroup;
 			children = (
-				4AA7753920C40ADA0087291C /* Media.xcassets */,
+				4A66ACCC20C5C2CF005E8B81 /* Media.xcassets */,
 				4A55F91A20623E04008FDAC2 /* AppDelegate.swift */,
 				4A55F91E20623E04008FDAC2 /* Main.storyboard */,
 				4A55F92320623E04008FDAC2 /* LaunchScreen.storyboard */,
@@ -355,7 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A55F92520623E04008FDAC2 /* LaunchScreen.storyboard in Resources */,
-				4AA7753A20C40ADA0087291C /* Media.xcassets in Resources */,
+				4A66ACCD20C5C2CF005E8B81 /* Media.xcassets in Resources */,
 				4A55F92020623E04008FDAC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
