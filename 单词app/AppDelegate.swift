@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import LeanCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        LeanCloud.initialize(applicationID: "sdKP6KqDYxjQdLqFmct0IsTL-gzGzoHsz", applicationKey: "0HnFbClpSAroW23Ogng4zICa")
         return true
     }
 
@@ -51,6 +53,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return container
     }()
     
+    static var persistentContainer: NSPersistentContainer {
+        return (UIApplication.shared.delegate as! AppDelegate).persistentContainer
+    }
+    
+    static var viewContext: NSManagedObjectContext {
+        return persistentContainer.viewContext
+    }
     // MARK: - Core Data Saving support
 //    
 //    func saveContext () {

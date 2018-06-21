@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A026B4220B022F3003D3E77 /* tabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A026B4120B022F3003D3E77 /* tabBarViewController.swift */; };
 		4A2A79782090CB4B0000F5E9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A79762090CB4B0000F5E9 /* SignInViewController.swift */; };
 		4A2A79792090CB4B0000F5E9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2A79772090CB4B0000F5E9 /* SignUpViewController.swift */; };
-		4A4CB22E20889F9100DACA63 /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CB22D20889F9100DACA63 /* WordListViewController.swift */; };
 		4A55F91B20623E04008FDAC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55F91A20623E04008FDAC2 /* AppDelegate.swift */; };
 		4A55F92020623E04008FDAC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A55F91E20623E04008FDAC2 /* Main.storyboard */; };
-		4A55F92220623E04008FDAC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A55F92120623E04008FDAC2 /* Assets.xcassets */; };
 		4A55F92520623E04008FDAC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A55F92320623E04008FDAC2 /* LaunchScreen.storyboard */; };
 		4A55F93020623E04008FDAC2 /* __appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55F92F20623E04008FDAC2 /* __appTests.swift */; };
 		4A55F93B20623E04008FDAC2 /* __appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A55F93A20623E04008FDAC2 /* __appUITests.swift */; };
-		4A5C0538206A77900016092D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A5C0536206A77900016092D /* Model.xcdatamodeld */; };
+		4A66ACBB20C48044005E8B81 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A66ACBA20C48044005E8B81 /* NotificationCenter.framework */; };
+		4A66ACCB20C53BEA005E8B81 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A66ACCA20C53BEA005E8B81 /* PlanViewController.swift */; };
+		4A66ACCD20C5C2CF005E8B81 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A66ACCC20C5C2CF005E8B81 /* Media.xcassets */; };
 		4A7152F8207210CD00436CFC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7152F7207210CD00436CFC /* MainViewController.swift */; };
-		4A7152FA2072118200436CFC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7152F92072118200436CFC /* HistoryViewController.swift */; };
 		4A7152FC2072119600436CFC /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7152FB2072119600436CFC /* LearnViewController.swift */; };
 		4A7152FE207216A800436CFC /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7152FD207216A800436CFC /* AddViewController.swift */; };
-		84636CDF197F8D8BC60284B5 /* Pods___app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485645C66AA559BBB129D75F /* Pods___app.framework */; };
+		4AA266AA2098AC2300EA63A9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA266A92098AC2300EA63A9 /* Alamofire.framework */; };
+		4AA266AC2098AC2300EA63A9 /* LeanCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA266AB2098AC2300EA63A9 /* LeanCloud.framework */; };
+		4AA7753020C1C5240087291C /* ShowMyWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7752F20C1C5240087291C /* ShowMyWords.swift */; };
+		4AA7753820C315DB0087291C /* WordTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7753720C315DB0087291C /* WordTVC.swift */; };
+		4AA77C1820BD4CC500BE3291 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA77C1720BD4CC500BE3291 /* Plan.swift */; };
+		4AA77C1D20BD50BD00BE3291 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA77C1C20BD50BD00BE3291 /* List.swift */; };
+		4AA77C2020BD514100BE3291 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AA77C1E20BD514100BE3291 /* Model.xcdatamodeld */; };
+		4AA77C2220BEB89D00BE3291 /* WordListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA77C2120BEB89D00BE3291 /* WordListController.swift */; };
+		4AA77C2720BFF81500BE3291 /* MyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA77C2620BFF81500BE3291 /* MyTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,14 +50,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		485645C66AA559BBB129D75F /* Pods___app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		485645C66AA559BBB129D75F /* Pods___app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___app.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A026B4120B022F3003D3E77 /* tabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarViewController.swift; sourceTree = "<group>"; };
 		4A2A79762090CB4B0000F5E9 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		4A2A79772090CB4B0000F5E9 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		4A4CB22D20889F9100DACA63 /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
 		4A55F91720623E04008FDAC2 /* 单词app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "单词app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A55F91A20623E04008FDAC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A55F91F20623E04008FDAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4A55F92120623E04008FDAC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A55F92420623E04008FDAC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A55F92620623E04008FDAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A55F92B20623E04008FDAC2 /* 单词appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "单词appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,11 +65,22 @@
 		4A55F93620623E04008FDAC2 /* 单词appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "单词appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A55F93A20623E04008FDAC2 /* __appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __appUITests.swift; sourceTree = "<group>"; };
 		4A55F93C20623E04008FDAC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A5C0537206A77900016092D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4A66ACB920C48044005E8B81 /* learningWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = learningWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A66ACBA20C48044005E8B81 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4A66ACCA20C53BEA005E8B81 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlanViewController.swift; path = "/Users/jinnaide/Desktop/Programing/单词app/ViewController/PlanViewController.swift"; sourceTree = "<absolute>"; };
+		4A66ACCC20C5C2CF005E8B81 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4A7152F7207210CD00436CFC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		4A7152F92072118200436CFC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		4A7152FB2072119600436CFC /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		4A7152FD207216A800436CFC /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		4AA266A92098AC2300EA63A9 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA266AB2098AC2300EA63A9 /* LeanCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LeanCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA7752F20C1C5240087291C /* ShowMyWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMyWords.swift; sourceTree = "<group>"; };
+		4AA7753720C315DB0087291C /* WordTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTVC.swift; sourceTree = "<group>"; };
+		4AA77C1720BD4CC500BE3291 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		4AA77C1C20BD50BD00BE3291 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		4AA77C1F20BD514100BE3291 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4AA77C2120BEB89D00BE3291 /* WordListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListController.swift; sourceTree = "<group>"; };
+		4AA77C2620BFF81500BE3291 /* MyTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTVC.swift; sourceTree = "<group>"; };
 		AE863FB28355805FBB95FB07 /* Pods-单词app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-单词app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-单词app/Pods-单词app.debug.xcconfig"; sourceTree = "<group>"; };
 		BBB1A2F58A207F6B391D8903 /* Pods-单词app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-单词app.release.xcconfig"; path = "Pods/Target Support Files/Pods-单词app/Pods-单词app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84636CDF197F8D8BC60284B5 /* Pods___app.framework in Frameworks */,
+				4AA266AA2098AC2300EA63A9 /* Alamofire.framework in Frameworks */,
+				4AA266AC2098AC2300EA63A9 /* LeanCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,13 +109,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A66ACB620C48044005E8B81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A66ACBB20C48044005E8B81 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4938290B9FBFAE64BBA5446C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4AA266A92098AC2300EA63A9 /* Alamofire.framework */,
+				4AA266AB2098AC2300EA63A9 /* LeanCloud.framework */,
 				485645C66AA559BBB129D75F /* Pods___app.framework */,
+				4A66ACBA20C48044005E8B81 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,6 +134,7 @@
 		4A55F90E20623E04008FDAC2 = {
 			isa = PBXGroup;
 			children = (
+				4AA77C1920BD4CDD00BE3291 /* Modal */,
 				4A606CE1206D07D900194724 /* ViewController */,
 				4A55F91920623E04008FDAC2 /* 单词app */,
 				4A55F92E20623E04008FDAC2 /* 单词appTests */,
@@ -120,6 +151,7 @@
 				4A55F91720623E04008FDAC2 /* 单词app.app */,
 				4A55F92B20623E04008FDAC2 /* 单词appTests.xctest */,
 				4A55F93620623E04008FDAC2 /* 单词appUITests.xctest */,
+				4A66ACB920C48044005E8B81 /* learningWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,12 +159,12 @@
 		4A55F91920623E04008FDAC2 /* 单词app */ = {
 			isa = PBXGroup;
 			children = (
+				4A66ACCC20C5C2CF005E8B81 /* Media.xcassets */,
 				4A55F91A20623E04008FDAC2 /* AppDelegate.swift */,
 				4A55F91E20623E04008FDAC2 /* Main.storyboard */,
-				4A55F92120623E04008FDAC2 /* Assets.xcassets */,
 				4A55F92320623E04008FDAC2 /* LaunchScreen.storyboard */,
 				4A55F92620623E04008FDAC2 /* Info.plist */,
-				4A5C0536206A77900016092D /* Model.xcdatamodeld */,
+				4AA77C1E20BD514100BE3291 /* Model.xcdatamodeld */,
 			);
 			path = "单词app";
 			sourceTree = "<group>";
@@ -158,15 +190,28 @@
 		4A606CE1206D07D900194724 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4A4CB22D20889F9100DACA63 /* WordListViewController.swift */,
-				4A7152F92072118200436CFC /* HistoryViewController.swift */,
+				4A66ACCA20C53BEA005E8B81 /* PlanViewController.swift */,
+				4AA7753720C315DB0087291C /* WordTVC.swift */,
+				4AA77C2620BFF81500BE3291 /* MyTVC.swift */,
+				4AA77C2120BEB89D00BE3291 /* WordListController.swift */,
 				4A7152FD207216A800436CFC /* AddViewController.swift */,
+				4AA7752F20C1C5240087291C /* ShowMyWords.swift */,
+				4A026B4120B022F3003D3E77 /* tabBarViewController.swift */,
 				4A7152FB2072119600436CFC /* LearnViewController.swift */,
 				4A2A79762090CB4B0000F5E9 /* SignInViewController.swift */,
 				4A2A79772090CB4B0000F5E9 /* SignUpViewController.swift */,
 				4A7152F7207210CD00436CFC /* MainViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4AA77C1920BD4CDD00BE3291 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				4AA77C1720BD4CC500BE3291 /* Plan.swift */,
+				4AA77C1C20BD50BD00BE3291 /* List.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 		E9F7772997EBF58CDA620628 /* Pods */ = {
@@ -236,13 +281,30 @@
 			productReference = 4A55F93620623E04008FDAC2 /* 单词appUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4A66ACB820C48044005E8B81 /* learningWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A66ACC620C48045005E8B81 /* Build configuration list for PBXNativeTarget "learningWidget" */;
+			buildPhases = (
+				4A66ACB520C48044005E8B81 /* Sources */,
+				4A66ACB620C48044005E8B81 /* Frameworks */,
+				4A66ACB720C48044005E8B81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = learningWidget;
+			productName = learningWidget;
+			productReference = 4A66ACB920C48044005E8B81 /* learningWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		4A55F90F20623E04008FDAC2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "金乃德";
 				TargetAttributes = {
@@ -259,6 +321,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4A55F91620623E04008FDAC2;
+					};
+					4A66ACB820C48044005E8B81 = {
+						CreatedOnToolsVersion = 9.4;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -278,6 +344,7 @@
 				4A55F91620623E04008FDAC2 /* 单词app */,
 				4A55F92A20623E04008FDAC2 /* 单词appTests */,
 				4A55F93520623E04008FDAC2 /* 单词appUITests */,
+				4A66ACB820C48044005E8B81 /* learningWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -288,7 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A55F92520623E04008FDAC2 /* LaunchScreen.storyboard in Resources */,
-				4A55F92220623E04008FDAC2 /* Assets.xcassets in Resources */,
+				4A66ACCD20C5C2CF005E8B81 /* Media.xcassets in Resources */,
 				4A55F92020623E04008FDAC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +368,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4A55F93420623E04008FDAC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A66ACB720C48044005E8B81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -355,15 +429,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA7753020C1C5240087291C /* ShowMyWords.swift in Sources */,
 				4A7152F8207210CD00436CFC /* MainViewController.swift in Sources */,
 				4A7152FE207216A800436CFC /* AddViewController.swift in Sources */,
+				4A026B4220B022F3003D3E77 /* tabBarViewController.swift in Sources */,
+				4AA77C2720BFF81500BE3291 /* MyTVC.swift in Sources */,
 				4A55F91B20623E04008FDAC2 /* AppDelegate.swift in Sources */,
-				4A4CB22E20889F9100DACA63 /* WordListViewController.swift in Sources */,
+				4AA77C1D20BD50BD00BE3291 /* List.swift in Sources */,
+				4AA77C1820BD4CC500BE3291 /* Plan.swift in Sources */,
 				4A2A79782090CB4B0000F5E9 /* SignInViewController.swift in Sources */,
 				4A7152FC2072119600436CFC /* LearnViewController.swift in Sources */,
 				4A2A79792090CB4B0000F5E9 /* SignUpViewController.swift in Sources */,
-				4A7152FA2072118200436CFC /* HistoryViewController.swift in Sources */,
-				4A5C0538206A77900016092D /* Model.xcdatamodeld in Sources */,
+				4A66ACCB20C53BEA005E8B81 /* PlanViewController.swift in Sources */,
+				4AA7753820C315DB0087291C /* WordTVC.swift in Sources */,
+				4AA77C2020BD514100BE3291 /* Model.xcdatamodeld in Sources */,
+				4AA77C2220BEB89D00BE3291 /* WordListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +460,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A55F93B20623E04008FDAC2 /* __appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A66ACB520C48044005E8B81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +704,42 @@
 			};
 			name = Release;
 		};
+		4A66ACC720C48045005E8B81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = learningWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.exple.--app.learningWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A66ACC820C48045005E8B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = learningWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.exple.--app.learningWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -656,15 +779,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4A66ACC620C48045005E8B81 /* Build configuration list for PBXNativeTarget "learningWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A66ACC720C48045005E8B81 /* Debug */,
+				4A66ACC820C48045005E8B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		4A5C0536206A77900016092D /* Model.xcdatamodeld */ = {
+		4AA77C1E20BD514100BE3291 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				4A5C0537206A77900016092D /* Model.xcdatamodel */,
+				4AA77C1F20BD514100BE3291 /* Model.xcdatamodel */,
 			);
-			currentVersion = 4A5C0537206A77900016092D /* Model.xcdatamodel */;
+			currentVersion = 4AA77C1F20BD514100BE3291 /* Model.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
