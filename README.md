@@ -1,5 +1,5 @@
 # LearningWords
-It's a Swift basic application which intend to help myself to learn words as well as to learn Swift language.
+It's a Swift basic application which intend to help myself learning words as well as to learn Swift language.
 
 It used LeanCloud for online sevices,such as signIn/signUp, downloading pre-setting wordlists to your local database.
 And manipulate those wordlists in local by yourself.
